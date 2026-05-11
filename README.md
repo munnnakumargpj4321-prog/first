@@ -6,7 +6,7 @@ A collection of programming projects including C practice problems and web devel
 
 ## Project 1: C Practice Problems
 
-A collection of 10 fundamental C programming problems to practice basic concepts like input/output, arithmetic operations, conditional statements, and variables.
+A collection of 20 fundamental C programming problems to practice basic concepts like input/output, arithmetic operations, conditional statements, switch statements, and variables.
 
 ### Features
 - Student marks percentage calculation
@@ -19,14 +19,26 @@ A collection of 10 fundamental C programming problems to practice basic concepts
 - Age to days converter
 - Even or odd number checker
 - Biggest of three numbers finder
+- ATM Withdrawal simulator with PIN verification
+- Login system with username and password
+- Grade calculator using switch statement
+- Leap year calculator
+- Movie ticket eligibility checker
+- Voting eligibility checker
+- Bonus calculator based on salary
+- Profit/loss calculator
+- Triangle validity checker
+- Mobile recharge offer checker
 
 ### Concepts Used
 - Input/Output operations (printf, scanf)
 - Arithmetic operations
 - Conditional statements (if-else)
+- Switch statements
 - Variables and data types (int, float)
 - Mathematical formulas
 - Type conversion
+- Authentication logic (PIN/username verification)
 
 ### Language/Technologies
 - C Programming Language
