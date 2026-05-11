@@ -112,6 +112,143 @@ int main() {
         printf("All numbers are equal or two numbers are equal\n");
     }
     printf("========================\n");
-
+    printf("11.ATM Withdrawal simulator");
+    int n,m;
+    printf("enter your pin:");
+    scanf("%d", &m);
+    int balance=10000;
+    if (m == 1234) {
+        printf("balance: %d\n", balance);
+    } else {
+        printf("Invalid pin\n");
+        return 0;
+    }
+    printf("enter your choice (1 for withdraw, 2 inquary of your bank acoutnt): ");
+    scanf("%d", &n);
+    if (n == 1) {
+    printf("Enter the amount to withdraw: ");
+    scanf("%d", &amount);
+    if (amount > balance) {
+        printf("Insufficient balance\n");
+    } else {
+        balance -= amount;
+        printf("Withdrawal successful\n");
+        printf("Remaining balance: %d\n", balance);
+    }
+    } else if (n == 2) {
+        printf("Your balance is: %d\n", balance);
+    }
+    printf("========================\n");
+    printf("12.login system.\n");
+    int password=1234,username=-1;
+    printf("enter your user name:");
+    scanf("%d", &username);
+    printf("enter your password:");
+    scanf("%d", &password);
+    if (username == 1 && password == 1234) {
+        printf("Login successful\n");
+    } else {
+        printf("Invalid username or password\n");
+    }
+    printf("========================\n");
+    printf("13.grade calculator.");
+    int marks;
+    printf("enter your marks:");
+    scanf("%d",&marks);
+    switch(marks){
+        case (marks>=90):
+            printf("A grade\n");
+            printf("Excellent\n");
+            break;
+        case (marks>=80):
+            printf("B grade\n");
+            printf("Good\n");
+            break;
+        case (marks>=70):
+            printf("C grade\n");
+            printf("Average\n");
+            break;
+        case (marks>=60):
+            printf("D grade\n");
+            printf("Below Average\n");
+            break;
+        default:
+            printf("F grade\n");
+            printf("Fail\n");
+            break;
+    }
+    printf("========================\n");
+    printf("14.leap year calculator");
+    int year;
+    printf("enter year:");
+    scanf("%d",&year);
+    if(year%4==0){
+        printf("this is a leap year.")
+    }else{
+        printf("this is noit a leap year.");
+    }
+    printf("========================");
+    printf("15.movie ticket aligiblity.");
+    int age;
+    printf("enter your age:");
+    scanf("%d",&age);
+    if(age>=18){
+        printf("you are eligible for movie ticket.");
+    }else{
+        printf("you are not eligible for movie ticket.");
+    }
+    printf("========================");
+    printf("16.voting eligibility.");
+    int age1;
+    printf("enter your age:");
+    scanf("%d",&age1);
+    if(age1>=18){
+        printf("you are eligible for voting.");
+    }else{
+        printf("you are not eligible for voting.");
+    }
+    printf("========================");
+    printf("17.bonous calculator."); 
+    int salary;
+    printf("enter your salary:");
+    scanf("%d",&salary);
+    if(salary>50000){
+        printf("you are eligible for bonous.");
+    }else{
+        printf("you are not eligible for bonous.");
+    }
+    printf("========================");
+    printf("18.profit/loss  calculator.");
+    int cost_price, selling_price;
+    printf("enter cost price:");
+    scanf("%d",&cost_price);
+    printf("enter selling price:");
+    scanf("%d",&selling_price);
+    if(selling_price>cost_price){
+        printf("you are in profit.");
+    }else{
+        printf("you are in loss.");
+    }
+    printf("========================");
+    printf("trengle valifity checker.");
+    int first,second,third;
+    printf("enter  all the three side of the trengle:");
+    scanf("%d %d %d",&first,&second,&third);
+    if(first+second+third==180){
+        printf("this is a valid triangle.");
+    }else{
+        printf("this is not a valid triangle.");
+    }
+    printf("========================");
+    printf("mobile recharge offer checker.");
+    int recharge_amount;
+    printf("enter your recharge amount:");
+    scanf("%d",&recharge_amount);
+    if(recharge_amount>=500){
+        printf("you are eligible for offer.");
+    }else{
+        printf("you are not eligible for offer.");
+    }
+    printf("========================");
     return 0;
 }
